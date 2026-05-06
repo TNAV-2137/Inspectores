@@ -10,4 +10,4 @@ try:
         html_data = f.read()
     components.html(html_data, height=800, scrolling=True)
 except FileNotFoundError:
-    st.error("No se encontró el archivo del mapa.")
+    st.error("No se encontró el archivo del mapa")
