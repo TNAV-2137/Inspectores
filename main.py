@@ -22,7 +22,7 @@ with col2: # Todo lo que pongamos aquí estará centrado
         st.warning("No se encontró el archivo del escudo ('escudo_dtnav.png') en GitHub.")
 
     # 2. Mostrar el Título (debajo del escudo)
-    st.title('Departamento Técnico de la Navegación - Inspectores')
+    st.title('Departamento Técnico de la Navegación - Distribucion de Inspectores')
 
 # --- FIN DEL CAMBIO ---
 
