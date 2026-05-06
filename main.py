@@ -1,38 +1,48 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import os
+import base64
 
-# Configuración de la página (esto es opcional pero recomendado)
+# Configuración de la página
 st.set_page_config(layout="wide", page_title="Mapa Inspectores PNA")
 
-# --- AQUÍ ESTÁ EL CAMBIO ---
+# Función para convertir imagen local a base64 (necesario para HTML en Streamlit)
+def get_image_base64(path):
+    with open(path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
 
-# 1. Mostrar el Escudo
-# Usamos 'use_column_width=False' y 'width=150' para que no ocupe todo el ancho
-# y se vea como un logo arriba del título.
-# Asegúrate de que el archivo 'escudo_dtnav.png' esté en tu GitHub.
+# --- INICIO DE LA SECCIÓN DE ENCABEZADO CENTRADO ---
 
-# Si quieres centrar la imagen y el título, puedes usar columnas:
-col1, col2, col3 = st.columns([1,2,1]) # Creamos 3 columnas, la del medio más ancha
+path_escudo = "escudo_dtnav.png"
 
-with col2: # Todo lo que pongamos aquí estará centrado
-    if os.path.exists("escudo_dtnav.png"):
-        st.image("escudo_dtnav.png", width=120) # Ajusta el 'width' (ancho) a tu gusto
-    else:
-        st.warning("No se encontró el archivo del escudo ('escudo_dtnav.png') en GitHub.")
+if os.path.exists(path_escudo):
+    # Convertimos la imagen para que el HTML la reconozca correctamente
+    img_base64 = get_image_base64(path_escudo)
+    
+    st.markdown(
+        f"""
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; margin-bottom: 20px;">
+            <img src="data:image/png;base64,{img_base64}" width="250" style="margin-bottom: 10px;">
+            <h1 style="margin-top: 0px;">Departamento Técnico de la Navegación - Distribución de Inspectores</h1>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+else:
+    # Si no existe la imagen, centramos solo el título
+    st.markdown("<h1 style='text-align: center;'>Departamento Técnico de la Navegación - Distribución de Inspectores</h1>", unsafe_allow_html=True)
+    st.warning("No se encontró el archivo 'escudo_dtnav.png'. Asegúrate de subirlo a la carpeta raíz de GitHub.")
 
-    # 2. Mostrar el Título (debajo del escudo)
-    st.title('Departamento Técnico de la Navegación - Distribucion de Inspectores')
+# --- FIN DE LA SECCIÓN DE ENCABEZADO ---
 
-# --- FIN DEL CAMBIO ---
-
-# 3. Cargar el mapa (esto ya lo tienes funcionando)
+# 3. Cargar el mapa
 with st.spinner("Cargando el mapa de inspectores..."):
-    # Tu código actual para cargar el mapa:
     path_mapa = "Mapa_Inspectores_Actualizado.html"
     if os.path.exists(path_mapa):
         with open(path_mapa, 'r', encoding='utf-8') as f:
             html_content = f.read()
-        components.html(html_content, height=700, scrolling=True)
+        
+        # Ajuste de ancho automático para que el mapa ocupe toda la pantalla
+        components.html(html_content, height=800, scrolling=True)
     else:
         st.error(f"No se encontró el archivo del mapa ('{path_mapa}') en GitHub.")
