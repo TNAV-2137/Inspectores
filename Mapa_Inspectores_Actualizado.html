@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ecdf90e2eaad3c89de2abd75bfa3f2ea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ecdf90e2eaad3c89de2abd75bfa3f2ea" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ecdf90e2eaad3c89de2abd75bfa3f2ea = L.map(
+                "map_ecdf90e2eaad3c89de2abd75bfa3f2ea",
+                {
+                    center: [-38.4161, -63.6167],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_95419ba76b0bb7c60ef03035114a004e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_95419ba76b0bb7c60ef03035114a004e.addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var marker_de0a0932f87eb7955369a094d843b06d = L.marker(
+                [-54.805155, -68.297952],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_c85cc5f705dfa47633dace1b0869f6c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_646e97b7debcd32d267e6da0ce7d6c7f = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_bda9e2cbcc94fd538c6859f068b3be2e = $(`<div id="html_bda9e2cbcc94fd538c6859f068b3be2e" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCGR (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA RUEDA NORMAN ENRIQUE</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CAPITAN                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 USHU (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA MORILLA GUSTAVO ARIEL</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA AGUIRRE ANDRES LEONARDO</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE LOGISTICA                 </div>                 </div></div>`)[0];
+                popup_646e97b7debcd32d267e6da0ce7d6c7f.setContent(html_bda9e2cbcc94fd538c6859f068b3be2e);
+            
+        
+
+        marker_de0a0932f87eb7955369a094d843b06d.bindPopup(popup_646e97b7debcd32d267e6da0ce7d6c7f)
+        ;
+
+        
+    
+    
+                marker_de0a0932f87eb7955369a094d843b06d.setIcon(icon_c85cc5f705dfa47633dace1b0869f6c8);
+            
+    
+            var marker_9b309f62eb6364a5ae56e8c6a58dc8a1 = L.marker(
+                [-51.617358, -69.209851],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_434c91a5166628887b1ba6986805ce06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b33036b287e01f883d6014bca5b2f824 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_b89763ed462e835bbb4584cd3cdc76c6 = $(`<div id="html_b89763ed462e835bbb4584cd3cdc76c6" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 PZMS (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGESMA GOMEZ MANUEL ALEJANDRO</b><br>                     <b>Esp:</b> MAQUINAS - ELECTRICIDAD | <b>Nivel:</b> IV - II<br>                     <b>Cargo:</b> JEFE DIV. OPERACIONES                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA SCORZA, FERNANDO OSCAR</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> nan<br>                     <b>Cargo:</b> JEFE DIV. ACTUACIONES ADM.  INTERNAS                 </div>                 </div></div>`)[0];
+                popup_b33036b287e01f883d6014bca5b2f824.setContent(html_b89763ed462e835bbb4584cd3cdc76c6);
+            
+        
+
+        marker_9b309f62eb6364a5ae56e8c6a58dc8a1.bindPopup(popup_b33036b287e01f883d6014bca5b2f824)
+        ;
+
+        
+    
+    
+                marker_9b309f62eb6364a5ae56e8c6a58dc8a1.setIcon(icon_434c91a5166628887b1ba6986805ce06);
+            
+    
+            var marker_7f11043cb68dd61d5b34ed8772a3d6d6 = L.marker(
+                [-51.61529, -69.213618],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_e1e4cad5eef46b3f75de8c604a11f03e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3842f4da787af7f60d7aea34d15fea1d = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_49808634bcd8cdc132788701df72a16f = $(`<div id="html_49808634bcd8cdc132788701df72a16f" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 RGAL (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA LANCIOTTI ALEJANDRO DANIEL</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA CABRAL RAMON NICOLAS</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> III<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_3842f4da787af7f60d7aea34d15fea1d.setContent(html_49808634bcd8cdc132788701df72a16f);
+            
+        
+
+        marker_7f11043cb68dd61d5b34ed8772a3d6d6.bindPopup(popup_3842f4da787af7f60d7aea34d15fea1d)
+        ;
+
+        
+    
+    
+                marker_7f11043cb68dd61d5b34ed8772a3d6d6.setIcon(icon_e1e4cad5eef46b3f75de8c604a11f03e);
+            
+    
+            var marker_bb6b2eda584466f01f442e32857c7111 = L.marker(
+                [-50.303809, -72.30148],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_bc3227b345869e90cbed84a81e21b4b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c68cef204654669cf26fd2b6bc3e7470 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_4182e803b53f501f9140fc891baf732f = $(`<div id="html_4182e803b53f501f9140fc891baf732f" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 LARG (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM CATALAN LUIS DARIO</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGEMA GOMEZ LOPEZ GERARDO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_c68cef204654669cf26fd2b6bc3e7470.setContent(html_4182e803b53f501f9140fc891baf732f);
+            
+        
+
+        marker_bb6b2eda584466f01f442e32857c7111.bindPopup(popup_c68cef204654669cf26fd2b6bc3e7470)
+        ;
+
+        
+    
+    
+                marker_bb6b2eda584466f01f442e32857c7111.setIcon(icon_bc3227b345869e90cbed84a81e21b4b6);
+            
+    
+            var marker_af685541d92ae39f0a8825bb936103a3 = L.marker(
+                [-50.017757, -68.515902],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_e375c5ac86bb6c905a6383ca3788d16f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b4696269cda09073e159ae97f2bbcf8 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_585448493f30b33a0b95a012155e43aa = $(`<div id="html_585448493f30b33a0b95a012155e43aa" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 SCRU (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA ROTTA CARLOS MAURICIO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                 </div></div>`)[0];
+                popup_9b4696269cda09073e159ae97f2bbcf8.setContent(html_585448493f30b33a0b95a012155e43aa);
+            
+        
+
+        marker_af685541d92ae39f0a8825bb936103a3.bindPopup(popup_9b4696269cda09073e159ae97f2bbcf8)
+        ;
+
+        
+    
+    
+                marker_af685541d92ae39f0a8825bb936103a3.setIcon(icon_e375c5ac86bb6c905a6383ca3788d16f);
+            
+    
+            var marker_53c4d1e92d52714d3dd5a879499e7d2e = L.marker(
+                [-49.306698, -67.720566],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_97d7f751485bdfb1dfb162d3a2331316 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d5bbad707c28713cd771b7fd839bbe4 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_7e40be5738f45641ccb4d4686254d02d = $(`<div id="html_7e40be5738f45641ccb4d4686254d02d" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 SJUL (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA ORTA, NATALIA SOLEDAD</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA LEGUIZA, RODRIGO EZEQUIEL</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_8d5bbad707c28713cd771b7fd839bbe4.setContent(html_7e40be5738f45641ccb4d4686254d02d);
+            
+        
+
+        marker_53c4d1e92d52714d3dd5a879499e7d2e.bindPopup(popup_8d5bbad707c28713cd771b7fd839bbe4)
+        ;
+
+        
+    
+    
+                marker_53c4d1e92d52714d3dd5a879499e7d2e.setIcon(icon_97d7f751485bdfb1dfb162d3a2331316);
+            
+    
+            var marker_2cde005c52c99b1b6ccc8f97e55ebd7e = L.marker(
+                [-47.753225, -65.90876],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_32af70974588d8025d34c8f2e0b0c533 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c378b9fea9c7c7132b26bcc55174c515 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_abc56abb987d4c43dd4d4fe870dd0fa4 = $(`<div id="html_abc56abb987d4c43dd4d4fe870dd0fa4" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 DESE (Total: 3)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA DELGADO VICTOR HUGO</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGECM MILIPIL CELIA VIRGINIA</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGENA ACOSTA MATIAS FACUNDO</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE ESPD                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCCB (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA SEGOVIA SAUL RUBEN</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CAPITAN                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGEMA BENITEZ VELAZQUEZ, NAHUEL HUMBERTO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE MAQ                 </div>                 </div></div>`)[0];
+                popup_c378b9fea9c7c7132b26bcc55174c515.setContent(html_abc56abb987d4c43dd4d4fe870dd0fa4);
+            
+        
+
+        marker_2cde005c52c99b1b6ccc8f97e55ebd7e.bindPopup(popup_c378b9fea9c7c7132b26bcc55174c515)
+        ;
+
+        
+    
+    
+                marker_2cde005c52c99b1b6ccc8f97e55ebd7e.setIcon(icon_32af70974588d8025d34c8f2e0b0c533);
+            
+    
+            var marker_cb48d9bcc73229deabca83a1359f2e60 = L.marker(
+                [-46.440726, -67.5128],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_458a56894ad401fc0cf1b71991adf4cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_270ac998e3270504105126a5d8e323ca = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_66e2ae2b899068d5e5e358f8e3fc38c2 = $(`<div id="html_66e2ae2b899068d5e5e358f8e3fc38c2" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 OLVA (Total: 3)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGECM DELBON ALEJANDRO MANUEL</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA OCAMPO LUIS DANIEL</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE ESOL                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGECM NIEVA FACUNDO MAURICIO</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE SECCIÓN POLICÍA DE SEGURIDAD JUDICIAL Y SUMARIOS                 </div>                 </div></div>`)[0];
+                popup_270ac998e3270504105126a5d8e323ca.setContent(html_66e2ae2b899068d5e5e358f8e3fc38c2);
+            
+        
+
+        marker_cb48d9bcc73229deabca83a1359f2e60.bindPopup(popup_270ac998e3270504105126a5d8e323ca)
+        ;
+
+        
+    
+    
+                marker_cb48d9bcc73229deabca83a1359f2e60.setIcon(icon_458a56894ad401fc0cf1b71991adf4cd);
+            
+    
+            var marker_b6fdefa1e26d4e64dc596bf300a7da8c = L.marker(
+                [-45.860696, -67.474486],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_fc53288135a54c051bb39de2a6e745b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_551cdc6a1a30ce669fbe0a489750d027 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_5e5e27b9f1d3dfdea43e0fca18d35c2c = $(`<div id="html_5e5e27b9f1d3dfdea43e0fca18d35c2c" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 CCTCR (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA GIOVANNETTI DIEGO NICOLAS</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE CGTMCR                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 CRIV (Total: 3)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA GALARZA JUAN FABRICIO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA VALLEJOS, WALTER BRUNO</b><br>                     <b>Esp:</b> MAQUINAS-ELECTRICIDAD | <b>Nivel:</b> III-II<br>                     <b>Cargo:</b> JEFE LOGISTICA                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCCTG RODRIGUEZ SERGIO FABRICIO</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> III<br>                     <b>Cargo:</b> JEFE SEC. INSP TECNICAS                 </div>                 </div></div>`)[0];
+                popup_551cdc6a1a30ce669fbe0a489750d027.setContent(html_5e5e27b9f1d3dfdea43e0fca18d35c2c);
+            
+        
+
+        marker_b6fdefa1e26d4e64dc596bf300a7da8c.bindPopup(popup_551cdc6a1a30ce669fbe0a489750d027)
+        ;
+
+        
+    
+    
+                marker_b6fdefa1e26d4e64dc596bf300a7da8c.setIcon(icon_fc53288135a54c051bb39de2a6e745b0);
+            
+    
+            var marker_1edb0d258ffd3d1a251bd9e33710e656 = L.marker(
+                [-43.337872, -65.061237],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_f761e1432d366b0bf992a92fd80cdd3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0efcd599d1c5cb5b47a8c419235e518d = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_8bc2549de39c649e103fd64b70d4240e = $(`<div id="html_8bc2549de39c649e103fd64b70d4240e" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 RAWS (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM CAVALLO, DIEGO DANIEL</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE DIVISION OPERACIONES                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGEMA MARTINEZ JORGE ALEJANDRO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE SECCION POLINAVE                 </div>                 </div></div>`)[0];
+                popup_0efcd599d1c5cb5b47a8c419235e518d.setContent(html_8bc2549de39c649e103fd64b70d4240e);
+            
+        
+
+        marker_1edb0d258ffd3d1a251bd9e33710e656.bindPopup(popup_0efcd599d1c5cb5b47a8c419235e518d)
+        ;
+
+        
+    
+    
+                marker_1edb0d258ffd3d1a251bd9e33710e656.setIcon(icon_f761e1432d366b0bf992a92fd80cdd3f);
+            
+    
+            var marker_e0c14a2690dffb60d943978fd5f774f3 = L.marker(
+                [-42.762303, -65.035384],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_97e2803c0d1f4817cc3212120b069b99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df9a7c0e5ded64e66a8e429c80536a27 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_a9c226cc3bea734cf106719ede200c3e = $(`<div id="html_a9c226cc3bea734cf106719ede200c3e" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCDE (Total: 5)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGGENA GIRARD ALEJANDRO RUBEN</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CAPITAN                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA ROSSETTI SEBASTIAN ANDRES</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> 1ER OFICIAL                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA NAVARRO DARIO JAVIER</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE DE MAQUINAS                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA COPPA CRISTIAN EMMANUEL</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE OPERACIONES                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGEMA GANDULLA ADRIAN ULISES</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> III<br>                     <b>Cargo:</b> JEFE PROPUL                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 MADR (Total: 4)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA YURICH DUBIED ALEJANDRO EXEQUIEL</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE DIVISIÓN LOGISTICA                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA PEREZ ANDRES GABINO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE SECCIÓN SUMARIOS                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA TRAVIESO CESAR GUSTAVO</b><br>                     <b>Esp:</b>  MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE SECCIÓN INSPECCIONES TÉCNICAS                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGECM LEZCANO FACUNDO DANIEL</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE SECCIÓN POLICÍA DE SEGURIDAD DE LA NAVEGACIÓN                 </div>                 </div></div>`)[0];
+                popup_df9a7c0e5ded64e66a8e429c80536a27.setContent(html_a9c226cc3bea734cf106719ede200c3e);
+            
+        
+
+        marker_e0c14a2690dffb60d943978fd5f774f3.bindPopup(popup_df9a7c0e5ded64e66a8e429c80536a27)
+        ;
+
+        
+    
+    
+                marker_e0c14a2690dffb60d943978fd5f774f3.setIcon(icon_97e2803c0d1f4817cc3212120b069b99);
+            
+    
+            var marker_c1290f18d6a7aa835e37215066a88d07 = L.marker(
+                [-42.57569, -64.276131],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_9903a6c7873c113d975c2f254cbb7218 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b0008011a7fc05485b15b8b1c5d6cf6 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_8e68c2704da28f4c6c39d971a9b3842b = $(`<div id="html_8e68c2704da28f4c6c39d971a9b3842b" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 PIRA (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGECM RODRIGUEZ ARIEL HERNAN</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                 </div></div>`)[0];
+                popup_2b0008011a7fc05485b15b8b1c5d6cf6.setContent(html_8e68c2704da28f4c6c39d971a9b3842b);
+            
+        
+
+        marker_c1290f18d6a7aa835e37215066a88d07.bindPopup(popup_2b0008011a7fc05485b15b8b1c5d6cf6)
+        ;
+
+        
+    
+    
+                marker_c1290f18d6a7aa835e37215066a88d07.setIcon(icon_9903a6c7873c113d975c2f254cbb7218);
+            
+    
+            var marker_a9d85f6060d35b72b134dc5ab0515e73 = L.marker(
+                [-40.782638, -71.658751],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_d9a8fcfbdbb850a4061b5f92db28ed7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4087801fc150b0cb3605d863db0c3752 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_4108505e1a75e05c6e2f252f1923eb6f = $(`<div id="html_4108505e1a75e05c6e2f252f1923eb6f" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 VIAN (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA FARIÑA NUÑEZ ROBERTO DARIO</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                 </div></div>`)[0];
+                popup_4087801fc150b0cb3605d863db0c3752.setContent(html_4108505e1a75e05c6e2f252f1923eb6f);
+            
+        
+
+        marker_a9d85f6060d35b72b134dc5ab0515e73.bindPopup(popup_4087801fc150b0cb3605d863db0c3752)
+        ;
+
+        
+    
+    
+                marker_a9d85f6060d35b72b134dc5ab0515e73.setIcon(icon_d9a8fcfbdbb850a4061b5f92db28ed7e);
+            
+    
+            var marker_22714db15a7ba588dfe6eb7a2e75a387 = L.marker(
+                [-40.727107, -64.939465],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_def12e862ca780f5552b850de6405b3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77e5de24750e6422e7f69ee9b4c254fe = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_3993126a24d5f919ca46ebda38efca9a = $(`<div id="html_3993126a24d5f919ca46ebda38efca9a" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCRN (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGENA BRITEZ FIGUEREDO WALTER FERNANDO</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CAPITAN                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 SANT (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGGECM HERNANDEZ PABLO MARTIN</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA NIEVA VICTOR OSCAR</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> ERP                 </div>                 </div></div>`)[0];
+                popup_77e5de24750e6422e7f69ee9b4c254fe.setContent(html_3993126a24d5f919ca46ebda38efca9a);
+            
+        
+
+        marker_22714db15a7ba588dfe6eb7a2e75a387.bindPopup(popup_77e5de24750e6422e7f69ee9b4c254fe)
+        ;
+
+        
+    
+    
+                marker_22714db15a7ba588dfe6eb7a2e75a387.setIcon(icon_def12e862ca780f5552b850de6405b3e);
+            
+    
+            var marker_965f1c2484598f7f7e8413a14e19c0e0 = L.marker(
+                [-38.788425, -62.273757],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_9bf71a4e9c8a18ade72511e7494eeb9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8f714ee7304b19b7c9f5e07ba03928b = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_4eae73de7cbdddad7a23d4f23127aff4 = $(`<div id="html_4eae73de7cbdddad7a23d4f23127aff4" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 CCTBB (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGENA LINAREZ HEIN, HEBER DAVID</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> OFICIAL CONTRASE                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCFI (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGGENA RAMIREZ ALFREDO ARIEL</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CAPITAN                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA CAPAI PEDRO RENE</b><br>                     <b>Esp:</b> MAQUINAS-CASCO | <b>Nivel:</b> II - I<br>                     <b>Cargo:</b> JEFE MAQ                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCIW (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA DINCAU EVARISTO JOSE</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CAPITAN                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGEMA DA SILVA CARLOS MIGUEL</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE MAQ.                 </div>                 </div></div>`)[0];
+                popup_d8f714ee7304b19b7c9f5e07ba03928b.setContent(html_4eae73de7cbdddad7a23d4f23127aff4);
+            
+        
+
+        marker_965f1c2484598f7f7e8413a14e19c0e0.bindPopup(popup_d8f714ee7304b19b7c9f5e07ba03928b)
+        ;
+
+        
+    
+    
+                marker_965f1c2484598f7f7e8413a14e19c0e0.setIcon(icon_9bf71a4e9c8a18ade72511e7494eeb9d);
+            
+    
+            var marker_d81fe4587756040b9977af6672e7f7cb = L.marker(
+                [-38.720496, -62.27097],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_01b7f0cac5bf8933976308ce80eb66b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a11ce16876d287e55f43739da3135ccc = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_952e957944b6b37c0c3cb203f25473da = $(`<div id="html_952e957944b6b37c0c3cb203f25473da" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 PZMN (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA ZAYAS MAXILIMIANO BERNANDO</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE DIV. ACT. ADM. INT.                 </div>                 </div></div>`)[0];
+                popup_a11ce16876d287e55f43739da3135ccc.setContent(html_952e957944b6b37c0c3cb203f25473da);
+            
+        
+
+        marker_d81fe4587756040b9977af6672e7f7cb.bindPopup(popup_a11ce16876d287e55f43739da3135ccc)
+        ;
+
+        
+    
+    
+                marker_d81fe4587756040b9977af6672e7f7cb.setIcon(icon_01b7f0cac5bf8933976308ce80eb66b7);
+            
+    
+            var marker_e751e4663f839a5e92b9ebe522b04492 = L.marker(
+                [-38.048683, -57.541457],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_1d43965cdefa147c99109c281bb7b8ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a718c3246e0249fdbac0a196eaa49ab = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_c5f9b0cd59deb8525ac399f546ab63ae = $(`<div id="html_c5f9b0cd59deb8525ac399f546ab63ae" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 CCTMP (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA MORETTI, CLAUDIO ALEJANDRO</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE CONTRASE                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCTH (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGGENA ZINI SERGIO DAVID</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CAPITAN                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA PARED SERGIO EZEQUIEL</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE DE MAQ.                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 MPLA  (Total: 6)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA RIOS JULIO RICARDO</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> III<br>                     <b>Cargo:</b> JEFE SECCION INSPECCIONES TECNICAS                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA MARTINOTTI, DIEGO ALEJANDRO</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> OFICIAL BUQUE ANGELESCU                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCCTG BRITEZ MIGUEL ANGEL</b><br>                     <b>Esp:</b> ELECTRICIDAD | <b>Nivel:</b> II<br>                     <b>Cargo:</b> OFICIAL SECCION INSPECCIONES TECNICAS                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCPINIB GORGA TOMAS SANTIAGO</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> IV<br>                     <b>Cargo:</b> OFICIAL SECCION INSPECCIONES TECNICAS                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCPIN BERTOLOTTI, RUBÉN ARIEL</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> III<br>                     <b>Cargo:</b> REALIZANDO CUPRO                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGENA GARCIA, GONZALO ALVARO MATIAS</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> OFICIAL SECCION GUARDIA T PATRULLAJE                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 NAPA (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA ROMAN FEDERICO MANUEL</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                 </div></div>`)[0];
+                popup_1a718c3246e0249fdbac0a196eaa49ab.setContent(html_c5f9b0cd59deb8525ac399f546ab63ae);
+            
+        
+
+        marker_e751e4663f839a5e92b9ebe522b04492.bindPopup(popup_1a718c3246e0249fdbac0a196eaa49ab)
+        ;
+
+        
+    
+    
+                marker_e751e4663f839a5e92b9ebe522b04492.setIcon(icon_1d43965cdefa147c99109c281bb7b8ab);
+            
+    
+            var marker_193c3dcd738192299003e0a00452661d = L.marker(
+                [-36.401822, -56.950395],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_49dffffadb1d0609bdc58970239f5dbb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae0d58714b9ade5bd479b36394d240a3 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_000fee809f7d307208ee7e5135ece5ff = $(`<div id="html_000fee809f7d307208ee7e5135ece5ff" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCLM (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGENA DI CROCE, ALEXIS NAHUEL</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CAPITAN                 </div>                 </div></div>`)[0];
+                popup_ae0d58714b9ade5bd479b36394d240a3.setContent(html_000fee809f7d307208ee7e5135ece5ff);
+            
+        
+
+        marker_193c3dcd738192299003e0a00452661d.bindPopup(popup_ae0d58714b9ade5bd479b36394d240a3)
+        ;
+
+        
+    
+    
+                marker_193c3dcd738192299003e0a00452661d.setIcon(icon_49dffffadb1d0609bdc58970239f5dbb);
+            
+    
+            var marker_7e07735c0de998c3cfc29fb4fa036b9e = L.marker(
+                [-34.86407, -57.89804],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_034a7525ccefdd8476e4e708041b1013 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6e556937330bbf9e9051e8b742e3a75 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_0f6ce6d79f2fc3366e69ba284f4281ec = $(`<div id="html_0f6ce6d79f2fc3366e69ba284f4281ec" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 LPLA (Total: 5)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA ROJAS MARTIN ADRIAN</b><br>                     <b>Esp:</b> MAQUINAS - ELECTRICIDAD | <b>Nivel:</b> III - II<br>                     <b>Cargo:</b> nan                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA SANDOVAL DANIEL FERMIN</b><br>                     <b>Esp:</b> MAQUINAS-CASCO | <b>Nivel:</b> II - I <br>                     <b>Cargo:</b> OFICIAL ERP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA SANCHEZ CAROLINA VERONICA</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> ERP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA CABALLERO SERGIO MATIAS</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> IV<br>                     <b>Cargo:</b> ERP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGEMA VARGAS ANSELMO ADRIAN</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> III<br>                     <b>Cargo:</b> ERP                 </div>                 </div></div>`)[0];
+                popup_b6e556937330bbf9e9051e8b742e3a75.setContent(html_0f6ce6d79f2fc3366e69ba284f4281ec);
+            
+        
+
+        marker_7e07735c0de998c3cfc29fb4fa036b9e.bindPopup(popup_b6e556937330bbf9e9051e8b742e3a75)
+        ;
+
+        
+    
+    
+                marker_7e07735c0de998c3cfc29fb4fa036b9e.setIcon(icon_034a7525ccefdd8476e4e708041b1013);
+            
+    
+            var marker_01384168e6d44bdd84e6414407fe0ef4 = L.marker(
+                [-34.707088, -58.231178],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_d2e6706b2ec1c6118f57baf40a9e9be0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57fe2ad9cd735e615ba85dcf89b932f5 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_fb90c7c91e1bdbec35bcfc2f72ebd0cd = $(`<div id="html_fb90c7c91e1bdbec35bcfc2f72ebd0cd" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 QUIL (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGEMA BARBOZA MAXIMILIANO RAMON</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE MAQ                 </div>                 </div></div>`)[0];
+                popup_57fe2ad9cd735e615ba85dcf89b932f5.setContent(html_fb90c7c91e1bdbec35bcfc2f72ebd0cd);
+            
+        
+
+        marker_01384168e6d44bdd84e6414407fe0ef4.bindPopup(popup_57fe2ad9cd735e615ba85dcf89b932f5)
+        ;
+
+        
+    
+    
+                marker_01384168e6d44bdd84e6414407fe0ef4.setIcon(icon_d2e6706b2ec1c6118f57baf40a9e9be0);
+            
+    
+            var marker_1dcdedec4f62aa61e33da08727749433 = L.marker(
+                [-34.644024, -58.338873],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_61ffb76706db5118d411dedf41bfc4c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b64f5770703cd3da52c27c9730178a4 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_8205208fb9e83f3b6676957e76e6638c = $(`<div id="html_8205208fb9e83f3b6676957e76e6638c" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 DSUD (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGGEMA DIAZ GERARDO DANIEL</b><br>                     <b>Esp:</b> MAQUINAS - ELECTRICIDAD | <b>Nivel:</b> IV - II<br>                     <b>Cargo:</b> JEFE                 </div>                 </div></div>`)[0];
+                popup_3b64f5770703cd3da52c27c9730178a4.setContent(html_8205208fb9e83f3b6676957e76e6638c);
+            
+        
+
+        marker_1dcdedec4f62aa61e33da08727749433.bindPopup(popup_3b64f5770703cd3da52c27c9730178a4)
+        ;
+
+        
+    
+    
+                marker_1dcdedec4f62aa61e33da08727749433.setIcon(icon_61ffb76706db5118d411dedf41bfc4c5);
+            
+    
+            var marker_778bae7dafabe904e4d9ed9cb3c311d9 = L.marker(
+                [-34.634578, -58.353372],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_14f5d35f11c5dd70d6466a5729bf7ddc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed21b328bc7f2b0cfdca35c2c5fb4c5a = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_8c8938fe8d6ed7913411be9239f1dc71 = $(`<div id="html_8c8938fe8d6ed7913411be9239f1dc71" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 BOCA (Total: 3)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM ALMAR MARIANO LUIS</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM KRAVACEK CARLOS ALAN</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE OPERACIONES                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA GUTIERREZ HERNAN ALEJANDRO</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> nan                 </div>                 </div></div>`)[0];
+                popup_ed21b328bc7f2b0cfdca35c2c5fb4c5a.setContent(html_8c8938fe8d6ed7913411be9239f1dc71);
+            
+        
+
+        marker_778bae7dafabe904e4d9ed9cb3c311d9.bindPopup(popup_ed21b328bc7f2b0cfdca35c2c5fb4c5a)
+        ;
+
+        
+    
+    
+                marker_778bae7dafabe904e4d9ed9cb3c311d9.setIcon(icon_14f5d35f11c5dd70d6466a5729bf7ddc);
+            
+    
+            var marker_cd3c7228b87031ae537e1933d9f99219 = L.marker(
+                [-34.604801, -58.367903],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_8b44dc81428bcd58854a53bf7963b411 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e505f68e9b9208145e324f4b5653f3d = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_51b51761e9cbe49debef4ec37ee21a96 = $(`<div id="html_51b51761e9cbe49debef4ec37ee21a96" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 CNES (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGECM HANSEN, ANDRES ENRIQUE</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> nan                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 DJPM (Total: 3)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA SOSA YAGO FLAVIO ERWIN</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> nan                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGEMA ROJAS NELSON EZEQUIEL</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> III<br>                     <b>Cargo:</b> nan                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM GONZALEZ JOSE PATRICIO</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> POL.AUX. PESQ.                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 DPER (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA VINZON SEBASTIAN RUBEN</b><br>                     <b>Esp:</b> MAQUINAS-CASCO | <b>Nivel:</b> II - I <br>                     <b>Cargo:</b> nan                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 DPLA (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGENA FERNANDEZ EDGAR EMANUEL</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> nan                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 DPSN (Total: 35)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGGECM BARRIOS GERARDO EUGENIO</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> IV<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGGENA MICLE, CARLOS MARTIN</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> SNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCPTN ZARATE JOSE ANTONIO</b><br>                     <b>Esp:</b> MAQUINAS - ELECTRICIDAD | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA SOLARI MARCELO GASTON</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> SNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM CORDOBA GISELLE SOLEDAD</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> IV<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM LOPEZ, NOELIA MABEL</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> GECC                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM RODRIGUEZ MARCOS DIONISIO</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> III<br>                     <b>Cargo:</b> SNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA GARCIA CARINA VANESA</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> SNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM DEL BARCO LUCIANO JOSE</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> III<br>                     <b>Cargo:</b> SNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA LOCH JULIO CESAR</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> III<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCPINIB CASTRO DASSEN FEDERICO MARIO</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCPINIL ETCHEVERRY ALFREDO</b><br>                     <b>Esp:</b> ELECTRICIDAD | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGESMA GRADALSKI VICTOR MARTIN</b><br>                     <b>Esp:</b> MAQUINAS - ELECTRICIDAD - CASCO | <b>Nivel:</b> IV-I-I<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA ARMAGNO NICOLAS OSCAR</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGGENA MILLAN ALEXIS DAVID</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> III - II<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA TRUCCO, TOMAS MARTIN</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA FRETTE JUAN MANUEL</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> III-II<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGECM MON FRANCO EMMANUEL</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> III<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGE BREE, GUILLERMO MAXIMILIANO</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> SNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGE BARRIOS ADRIAN LUIS</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> III-II<br>                     <b>Cargo:</b> SNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGE BADARACCO ARTURO FEDERICO</b><br>                     <b>Esp:</b> MAQUINAS-ELECTRICIDAD | <b>Nivel:</b> IV-I<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA ALBINO, GISELA MARINA</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGE ZACARIAS TONIOLO SERGIO ADRIEL</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> III<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCCTG DUARTE ADRIAN RUBEN</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCPIN CASALINS ESTEBAN</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCPIN VOLPONI MATIAS ADRIAN</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCPIN MELLONI MARTIN GUSTAVO</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGIN ADAMOLI LUCAS</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCPIN PRIETO MATIAS ANDRES</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCPIN RIOJA RODOLFO</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCPIN FERRERI PABLO</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCPIN COSTA FLORENCIA MONTSERRAT</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> IV-EXT<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCPIN CANCELARICH PABLO ALEJANDRO</b><br>                     <b>Esp:</b> ELECTRICIDAD | <b>Nivel:</b> II<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCPIN MELA LAURA NOEMI</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> TNAV                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCPIN OCAMPO LEONEL HORACIO</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> 1<br>                     <b>Cargo:</b> TNAV                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 DTRA (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGECM GARCIA, VERONICA MALEN</b><br>                     <b>Esp:</b> nan | <b>Nivel:</b> nan<br>                     <b>Cargo:</b> nan                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGECM VALENZUELA ESTEBAN FABIAN</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CONTRASE                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 IFCA (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGECM CANTERO RODRIGUEZ FACUNDO</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> DPTO INFORMATICA                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 KSTM (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA BISCIA FRANCISCO</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> nan                 </div>                 </div></div>`)[0];
+                popup_1e505f68e9b9208145e324f4b5653f3d.setContent(html_51b51761e9cbe49debef4ec37ee21a96);
+            
+        
+
+        marker_cd3c7228b87031ae537e1933d9f99219.bindPopup(popup_1e505f68e9b9208145e324f4b5653f3d)
+        ;
+
+        
+    
+    
+                marker_cd3c7228b87031ae537e1933d9f99219.setIcon(icon_8b44dc81428bcd58854a53bf7963b411);
+            
+    
+            var marker_71e78b45eb8bdebb84519b21c2e0cec8 = L.marker(
+                [-34.580283, -58.375985],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_cf7ba92741d96a1557da6d373ac6e9b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05203e6264b40b7f53ce20b28c43cae7 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_cad490ac56b5509271367788c63e4c71 = $(`<div id="html_cad490ac56b5509271367788c63e4c71" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 BSAS (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGGECM OCAMPO ELEUTERIO MARCELO</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA RIOS FEDERICO NICOLAS</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> OFICIAL OPERACIONES                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 CCTRP (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA STECHINA NICOLAS ANDRES</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> OFICIAL COBA                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCBB (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA MENESES MARIO RODRIGO</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CAPITAN                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCCC (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA ABELLAN LEONARDO SEBASTIAN</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CAPITAN                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCRD (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGEMA LEZCANO, YAMILA GISELA</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> DISPER<br>                     <b>Cargo:</b> JEFE DE MAQUINAS                 </div>                 </div></div>`)[0];
+                popup_05203e6264b40b7f53ce20b28c43cae7.setContent(html_cad490ac56b5509271367788c63e4c71);
+            
+        
+
+        marker_71e78b45eb8bdebb84519b21c2e0cec8.bindPopup(popup_05203e6264b40b7f53ce20b28c43cae7)
+        ;
+
+        
+    
+    
+                marker_71e78b45eb8bdebb84519b21c2e0cec8.setIcon(icon_cf7ba92741d96a1557da6d373ac6e9b6);
+            
+    
+            var marker_5e567a5362ae910a958128e16a6d9643 = L.marker(
+                [-34.429376, -58.559384],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_64a62d64671e593bcbb0daed6d7ed019 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98781dc65f845e13c96d2f5a43849dc4 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_c0a7f7334fc3fb39fc56281c9b8eb70c = $(`<div id="html_c0a7f7334fc3fb39fc56281c9b8eb70c" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 SFER (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA REYES DIEGO MANUEL</b><br>                     <b>Esp:</b> MAQ-ELECTR-CASCO | <b>Nivel:</b> IV - I - I<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_98781dc65f845e13c96d2f5a43849dc4.setContent(html_c0a7f7334fc3fb39fc56281c9b8eb70c);
+            
+        
+
+        marker_5e567a5362ae910a958128e16a6d9643.bindPopup(popup_98781dc65f845e13c96d2f5a43849dc4)
+        ;
+
+        
+    
+    
+                marker_5e567a5362ae910a958128e16a6d9643.setIcon(icon_64a62d64671e593bcbb0daed6d7ed019);
+            
+    
+            var marker_bb6a2fc320850a1470ed16abc11bf7c5 = L.marker(
+                [-34.420224, -58.578694],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_e80efb50a22e377ca21d60e97448ccdb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_255cf84468cbc5139c6822b1f28e76b0 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_d651a3e11264452768a941c7c53505d2 = $(`<div id="html_d651a3e11264452768a941c7c53505d2" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 TIGR (Total: 3)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA DUCASSE MIGUEL SEBASTIAN</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA RIVA MARTIN EDUARDO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> DLOG (JEFE)                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGECM VECCHIO WALTER ANDRES</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE SUMARIO                 </div>                 </div></div>`)[0];
+                popup_255cf84468cbc5139c6822b1f28e76b0.setContent(html_d651a3e11264452768a941c7c53505d2);
+            
+        
+
+        marker_bb6a2fc320850a1470ed16abc11bf7c5.bindPopup(popup_255cf84468cbc5139c6822b1f28e76b0)
+        ;
+
+        
+    
+    
+                marker_bb6a2fc320850a1470ed16abc11bf7c5.setIcon(icon_e80efb50a22e377ca21d60e97448ccdb);
+            
+    
+            var marker_83b4cdf21619061b23cafd1bbead5745 = L.marker(
+                [-34.415961, -58.579701],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_b178805ff4e0e3fc6a674a3686c746da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_069383a3047863308dc493f0e7d260ad = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_cca2be3f0cad6f00a0091df77189f221 = $(`<div id="html_cca2be3f0cad6f00a0091df77189f221" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCMP (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA ZABALA, ANDRES</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CAPITAN                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 PZDE (Total: 3)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA QUINTEROS JAVIER GUILLERMO</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCCTGCN GONZALEZ SERGIO DAVID</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE INSPECCIONES                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OXCCTG MERHI RODRIGUEZ MOHAMED MOUSTAPHA</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> III<br>                     <b>Cargo:</b> OFICIAL DE INSPECCIONES                 </div>                 </div></div>`)[0];
+                popup_069383a3047863308dc493f0e7d260ad.setContent(html_cca2be3f0cad6f00a0091df77189f221);
+            
+        
+
+        marker_83b4cdf21619061b23cafd1bbead5745.bindPopup(popup_069383a3047863308dc493f0e7d260ad)
+        ;
+
+        
+    
+    
+                marker_83b4cdf21619061b23cafd1bbead5745.setIcon(icon_b178805ff4e0e3fc6a674a3686c746da);
+            
+    
+            var marker_349bcae191b3d18367e9daecf6690022 = L.marker(
+                [-34.187165, -58.254016],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_0755658dc03c8799209e77bbd2184b41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6882c355b623fafaa2a7ef20766f345 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_ee3c51fa70d08f5c7f71e0bee45f4eaa = $(`<div id="html_ee3c51fa70d08f5c7f71e0bee45f4eaa" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 MGAR (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA AGUIRRE CARLOS MARIA</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                 </div></div>`)[0];
+                popup_e6882c355b623fafaa2a7ef20766f345.setContent(html_ee3c51fa70d08f5c7f71e0bee45f4eaa);
+            
+        
+
+        marker_349bcae191b3d18367e9daecf6690022.bindPopup(popup_e6882c355b623fafaa2a7ef20766f345)
+        ;
+
+        
+    
+    
+                marker_349bcae191b3d18367e9daecf6690022.setIcon(icon_0755658dc03c8799209e77bbd2184b41);
+            
+    
+            var marker_37cb2a03f929cc452a49858dcc539401 = L.marker(
+                [-34.155634, -58.955379],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_d554dd03924f0f572c207cb8feb71145 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9b3ac8519f080cc18b57ca5388af39e = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_aff839d92c886c883fc3c38e3eea8a07 = $(`<div id="html_aff839d92c886c883fc3c38e3eea8a07" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 CAMP (Total: 3)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA MARTINEZ MIGUEL ANGEL</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA GONZALEZ JONATHAN LEANDRO</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> nan<br>                     <b>Cargo:</b> JEFE DIVISION LOGISTICA                                                                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGECM JUNCO OSCAR AGUSTIN</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE SECCIÓN PERSONAL                 </div>                 </div></div>`)[0];
+                popup_f9b3ac8519f080cc18b57ca5388af39e.setContent(html_aff839d92c886c883fc3c38e3eea8a07);
+            
+        
+
+        marker_37cb2a03f929cc452a49858dcc539401.bindPopup(popup_f9b3ac8519f080cc18b57ca5388af39e)
+        ;
+
+        
+    
+    
+                marker_37cb2a03f929cc452a49858dcc539401.setIcon(icon_d554dd03924f0f572c207cb8feb71145);
+            
+    
+            var marker_401bbaedcaa92ea1380db2a6a1fe079d = L.marker(
+                [-34.100369, -59.011966],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_b7173602104c08d009b0e84402f92e6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a33f2442c67bf60601a05d6e067f65ea = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_a58379c43882726b136d87d1d1a6d6ef = $(`<div id="html_a58379c43882726b136d87d1d1a6d6ef" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 ZARA (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGEMA ABRANCHUK JUAN MANUEL</b><br>                     <b>Esp:</b> MAQUINAS-ELECTRICIDAD | <b>Nivel:</b> III-I<br>                     <b>Cargo:</b> JEFE ERP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA BAEZ VICTOR HUGO</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CCTZA                 </div>                 </div></div>`)[0];
+                popup_a33f2442c67bf60601a05d6e067f65ea.setContent(html_a58379c43882726b136d87d1d1a6d6ef);
+            
+        
+
+        marker_401bbaedcaa92ea1380db2a6a1fe079d.bindPopup(popup_a33f2442c67bf60601a05d6e067f65ea)
+        ;
+
+        
+    
+    
+                marker_401bbaedcaa92ea1380db2a6a1fe079d.setIcon(icon_b7173602104c08d009b0e84402f92e6f);
+            
+    
+            var marker_6d8bcbf33bfd5eaf468f54913f4cf901 = L.marker(
+                [-34.014703, -58.395483],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_8f4471a95da4e13bada25d10a239ba70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3531138f7b183b2834fdec4ef2b229b0 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_87837fc422e74581dbc2839ce7891d3f = $(`<div id="html_87837fc422e74581dbc2839ce7891d3f" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GUAZ (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA RECABARREN ADRIAN MARCELO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> III<br>                     <b>Cargo:</b> JEFE                 </div>                 </div></div>`)[0];
+                popup_3531138f7b183b2834fdec4ef2b229b0.setContent(html_87837fc422e74581dbc2839ce7891d3f);
+            
+        
+
+        marker_6d8bcbf33bfd5eaf468f54913f4cf901.bindPopup(popup_3531138f7b183b2834fdec4ef2b229b0)
+        ;
+
+        
+    
+    
+                marker_6d8bcbf33bfd5eaf468f54913f4cf901.setIcon(icon_8f4471a95da4e13bada25d10a239ba70);
+            
+    
+            var marker_afc6d2527c61bc38d5977e975e5092a6 = L.marker(
+                [-33.715969, -58.656386],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_79b505fde8d001c2db4c8fda714e1f78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7582d6a362520a2b2fb4f925e7c0007d = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_04e7b46ce3ed390845de0d390a3e162f = $(`<div id="html_04e7b46ce3ed390845de0d390a3e162f" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 PRTO (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGEMA BRAZEIRO JOSE AUGUSTO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_7582d6a362520a2b2fb4f925e7c0007d.setContent(html_04e7b46ce3ed390845de0d390a3e162f);
+            
+        
+
+        marker_afc6d2527c61bc38d5977e975e5092a6.bindPopup(popup_7582d6a362520a2b2fb4f925e7c0007d)
+        ;
+
+        
+    
+    
+                marker_afc6d2527c61bc38d5977e975e5092a6.setIcon(icon_79b505fde8d001c2db4c8fda714e1f78);
+            
+    
+            var marker_e1cd5ba5d1e76d9e5c478e3a568301cc = L.marker(
+                [-33.480429, -59.996489],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_f393b232ae1f67770f5c3214c372a922 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21164686aca3b96d7b15736972553fba = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_ad4f8f3bd1eeea494e428478c493f206 = $(`<div id="html_ad4f8f3bd1eeea494e428478c493f206" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 RLLO (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA SANSUERRO JOSE FRANCISCO</b><br>                     <b>Esp:</b> MAQUINAS  | <b>Nivel:</b> III<br>                     <b>Cargo:</b> JEFE                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGEMA LEDESMA PABLO DAVID </b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> I<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_21164686aca3b96d7b15736972553fba.setContent(html_ad4f8f3bd1eeea494e428478c493f206);
+            
+        
+
+        marker_e1cd5ba5d1e76d9e5c478e3a568301cc.bindPopup(popup_21164686aca3b96d7b15736972553fba)
+        ;
+
+        
+    
+    
+                marker_e1cd5ba5d1e76d9e5c478e3a568301cc.setIcon(icon_f393b232ae1f67770f5c3214c372a922);
+            
+    
+            var marker_f06dde6360a0f054fdf841c96028d65c = L.marker(
+                [-33.332916, -60.227168],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_ef6d0f6b3a61124d8e616faf9848cd33 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1dd5f4da16cc311b707cd8fb8e2ee4a = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_89884009c651c29385462c4b7916249a = $(`<div id="html_89884009c651c29385462c4b7916249a" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 CCTSN (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA POELSTRA RICARDO JOAQUIN</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE CCTR                 </div>                 </div></div>`)[0];
+                popup_e1dd5f4da16cc311b707cd8fb8e2ee4a.setContent(html_89884009c651c29385462c4b7916249a);
+            
+        
+
+        marker_f06dde6360a0f054fdf841c96028d65c.bindPopup(popup_e1dd5f4da16cc311b707cd8fb8e2ee4a)
+        ;
+
+        
+    
+    
+                marker_f06dde6360a0f054fdf841c96028d65c.setIcon(icon_ef6d0f6b3a61124d8e616faf9848cd33);
+            
+    
+            var marker_26ef1dbc4c9ba852e748d1da4f48fccb = L.marker(
+                [-33.129273, -60.507101],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_3e5e6e5cd452bc8b7a4b9afaea06d181 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3239b423be9348af1f87a60e22c7f220 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_52afcbfc397dc13accd7eae763767a8e = $(`<div id="html_52afcbfc397dc13accd7eae763767a8e" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 ASEC (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA PAVON SERGIO JAVIER</b><br>                     <b>Esp:</b> MAQUINAS-CASCO | <b>Nivel:</b> III - I<br>                     <b>Cargo:</b> JEFE                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGEMA GOMEZ GREGORIO HIPOLITO</b><br>                     <b>Esp:</b> MAQUINAS-ELECTRICIDAD | <b>Nivel:</b> II-II<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_3239b423be9348af1f87a60e22c7f220.setContent(html_52afcbfc397dc13accd7eae763767a8e);
+            
+        
+
+        marker_26ef1dbc4c9ba852e748d1da4f48fccb.bindPopup(popup_3239b423be9348af1f87a60e22c7f220)
+        ;
+
+        
+    
+    
+                marker_26ef1dbc4c9ba852e748d1da4f48fccb.setIcon(icon_3e5e6e5cd452bc8b7a4b9afaea06d181);
+            
+    
+            var marker_d61d428162593e42c39ba2107339192d = L.marker(
+                [-32.943521, -60.633683],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_47bb0d832f5f38e0bc7cc4f4877f93b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3a7da4241de0b359655f9dc93a96cf4 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_45f4d0717ad4f4021d86ce6ffed6b611 = $(`<div id="html_45f4d0717ad4f4021d86ce6ffed6b611" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 PZBP (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCCTG ROMERO EXEQUIEL ALBERTO</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> III<br>                     <b>Cargo:</b> INSP. TECNICAS                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 ROSA (Total: 3)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA GAUNA LUIS ARIEL</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM GIOVANARDI JAVIER</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA BUSO VEGA HUGO SEBASTIAN</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CCTRO                 </div>                 </div></div>`)[0];
+                popup_d3a7da4241de0b359655f9dc93a96cf4.setContent(html_45f4d0717ad4f4021d86ce6ffed6b611);
+            
+        
+
+        marker_d61d428162593e42c39ba2107339192d.bindPopup(popup_d3a7da4241de0b359655f9dc93a96cf4)
+        ;
+
+        
+    
+    
+                marker_d61d428162593e42c39ba2107339192d.setIcon(icon_47bb0d832f5f38e0bc7cc4f4877f93b3);
+            
+    
+            var marker_f75acb2573ee6c40181b028fab3fb18c = L.marker(
+                [-32.718294, -60.726857],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_c70256313a5827ca76002040d9d1c879 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ff415f6e3729da27a6b2e3498f98867 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_5487617bff888df13bbafa2ac2ef9521 = $(`<div id="html_5487617bff888df13bbafa2ac2ef9521" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 SLOR (Total: 6)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA GOMEZ COSTADONI SEBASTIAN ANDRES</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE LOGISTICA                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA FUENTE JUAN PABLO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> III<br>                     <b>Cargo:</b> JEFE SUMARIO                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA VIVAS, PABLO SEBASTIAN</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> III<br>                     <b>Cargo:</b> JEFE PERSONAL                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM SCETTA, BRUNO ESTEBAN</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> ERP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGGEMA SILVA JORGE RUBEN</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA ACUÑA DIEGO EMANUEL</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> SIN SERVICIO                 </div>                 </div></div>`)[0];
+                popup_3ff415f6e3729da27a6b2e3498f98867.setContent(html_5487617bff888df13bbafa2ac2ef9521);
+            
+        
+
+        marker_f75acb2573ee6c40181b028fab3fb18c.bindPopup(popup_3ff415f6e3729da27a6b2e3498f98867)
+        ;
+
+        
+    
+    
+                marker_f75acb2573ee6c40181b028fab3fb18c.setIcon(icon_c70256313a5827ca76002040d9d1c879);
+            
+    
+            var marker_d78302f8c1580fcd6d3d4e752ed09664 = L.marker(
+                [-32.481031, -58.223314],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_d8738bb1d3960c57d94ad81d8f0a2b48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5ddcd0ab8416294bef2b8724018fd55 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_776e5a132277ee18305b52082917e5d6 = $(`<div id="html_776e5a132277ee18305b52082917e5d6" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 PZBU (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCPINIB HORMAIZTEGUI JUAN AGUSTIN</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> IV<br>                     <b>Cargo:</b> JEFE INSPECCIONES                 </div>                 </div></div>`)[0];
+                popup_b5ddcd0ab8416294bef2b8724018fd55.setContent(html_776e5a132277ee18305b52082917e5d6);
+            
+        
+
+        marker_d78302f8c1580fcd6d3d4e752ed09664.bindPopup(popup_b5ddcd0ab8416294bef2b8724018fd55)
+        ;
+
+        
+    
+    
+                marker_d78302f8c1580fcd6d3d4e752ed09664.setIcon(icon_d8738bb1d3960c57d94ad81d8f0a2b48);
+            
+    
+            var marker_991c00c94bf4b870a478d1873a6afbef = L.marker(
+                [-32.477853, -58.221532],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_6da2c8df5267cbfd4df69bcab3e17648 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db6884814096b54d25740d259e3ce4be = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_915562449d0ba84c619a942c2808cb62 = $(`<div id="html_915562449d0ba84c619a942c2808cb62" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 CURU (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGGECM FERNANDEZ ROBERTO SILVIO DANIEL</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGECM MARTINOLI BRUNO RENATO</b><br>                     <b>Esp:</b> EQUIPO - RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_db6884814096b54d25740d259e3ce4be.setContent(html_915562449d0ba84c619a942c2808cb62);
+            
+        
+
+        marker_991c00c94bf4b870a478d1873a6afbef.bindPopup(popup_db6884814096b54d25740d259e3ce4be)
+        ;
+
+        
+    
+    
+                marker_991c00c94bf4b870a478d1873a6afbef.setIcon(icon_6da2c8df5267cbfd4df69bcab3e17648);
+            
+    
+            var marker_f2f8594a69544e2baa39b8deb4cf46bf = L.marker(
+                [-32.216165, -58.136986],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_1c69d04b0c79fe11c9028f90ad24658d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5a8f52ef087b1870a05370ff9d86a20 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_57d5fdc46e0c0dffc1f1a2a79e43f61d = $(`<div id="html_57d5fdc46e0c0dffc1f1a2a79e43f61d" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 CLON (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM PESOA LEONARDO GASTON</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                 </div></div>`)[0];
+                popup_a5a8f52ef087b1870a05370ff9d86a20.setContent(html_57d5fdc46e0c0dffc1f1a2a79e43f61d);
+            
+        
+
+        marker_f2f8594a69544e2baa39b8deb4cf46bf.bindPopup(popup_a5a8f52ef087b1870a05370ff9d86a20)
+        ;
+
+        
+    
+    
+                marker_f2f8594a69544e2baa39b8deb4cf46bf.setIcon(icon_1c69d04b0c79fe11c9028f90ad24658d);
+            
+    
+            var marker_788295e967e496bada24ae2a7d4ddcde = L.marker(
+                [-32.065853, -60.643145],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_a0ecb7e11fea920e83f0c15ba1b14549 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c199881bc632f67712c5b76d9ebee715 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_1b46c83cbd2cfda378f10078c952fc31 = $(`<div id="html_1b46c83cbd2cfda378f10078c952fc31" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 DIAM (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGEMA LIMA DANIEL ALEXANDER</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA CASTRIGNANO JOSE DAVID</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                 </div></div>`)[0];
+                popup_c199881bc632f67712c5b76d9ebee715.setContent(html_1b46c83cbd2cfda378f10078c952fc31);
+            
+        
+
+        marker_788295e967e496bada24ae2a7d4ddcde.bindPopup(popup_c199881bc632f67712c5b76d9ebee715)
+        ;
+
+        
+    
+    
+                marker_788295e967e496bada24ae2a7d4ddcde.setIcon(icon_a0ecb7e11fea920e83f0c15ba1b14549);
+            
+    
+            var marker_13a340f521f8ce42b66a0fde65bad592 = L.marker(
+                [-31.719426, -60.51958],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_1c7c11ca6572097c7563a94a6826e724 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e9e9c9ee24e2b8f336e1721756eefdd = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_d820306671e97af7aae403be09d2d3fa = $(`<div id="html_d820306671e97af7aae403be09d2d3fa" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCMC (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA FERNANDEZ GABRIEL SEBASTIAN</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CAPITAN                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 OFAP (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA MORRONE, GUSTAVO MARCELO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> nan                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 POSA (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGEMA BUSTAMANTE PRISCILA MARIEL</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> nan                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGEMA PELLEGRINI SERGIO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> nan<br>                     <b>Cargo:</b> nan                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 PZAP (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGECM ESTEVEZ PABLO MAXIMILIANO</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> nan                 </div>                 </div></div>`)[0];
+                popup_9e9e9c9ee24e2b8f336e1721756eefdd.setContent(html_d820306671e97af7aae403be09d2d3fa);
+            
+        
+
+        marker_13a340f521f8ce42b66a0fde65bad592.bindPopup(popup_9e9e9c9ee24e2b8f336e1721756eefdd)
+        ;
+
+        
+    
+    
+                marker_13a340f521f8ce42b66a0fde65bad592.setIcon(icon_1c7c11ca6572097c7563a94a6826e724);
+            
+    
+            var marker_4b2fef52cce4f3e5a65e67675135a56d = L.marker(
+                [-31.65027, -60.704625],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_4fc746f7755cd2a88d0ea5597b5c05a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd77e657cd55c1bec89b02a8463fd971 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_027d1b5ed2a8fdc03ecbe081d86fdbed = $(`<div id="html_027d1b5ed2a8fdc03ecbe081d86fdbed" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 SAFE (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM SCANDOLO RAFAEL MAXIMILIANO</b><br>                     <b>Esp:</b> EQUIPO-RADIO | <b>Nivel:</b> EXT<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_fd77e657cd55c1bec89b02a8463fd971.setContent(html_027d1b5ed2a8fdc03ecbe081d86fdbed);
+            
+        
+
+        marker_4b2fef52cce4f3e5a65e67675135a56d.bindPopup(popup_fd77e657cd55c1bec89b02a8463fd971)
+        ;
+
+        
+    
+    
+                marker_4b2fef52cce4f3e5a65e67675135a56d.setIcon(icon_4fc746f7755cd2a88d0ea5597b5c05a1);
+            
+    
+            var marker_bb7a2e36ac7e500610d8df50c4b6822c = L.marker(
+                [-31.402701, -58.00492],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_2c4d5ef193592b57e3be31587cf39eb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0640f160e9aae850196ffac8c49667e = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_742f6623e2b00ce441ef5757c7d36db3 = $(`<div id="html_742f6623e2b00ce441ef5757c7d36db3" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 CONC (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGEMA ROMERO ANDRES ALEJANDRO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_a0640f160e9aae850196ffac8c49667e.setContent(html_742f6623e2b00ce441ef5757c7d36db3);
+            
+        
+
+        marker_bb7a2e36ac7e500610d8df50c4b6822c.bindPopup(popup_a0640f160e9aae850196ffac8c49667e)
+        ;
+
+        
+    
+    
+                marker_bb7a2e36ac7e500610d8df50c4b6822c.setIcon(icon_2c4d5ef193592b57e3be31587cf39eb3);
+            
+    
+            var marker_bc1b43ddab934c3a0530355ccfdb85eb = L.marker(
+                [-31.263229, -57.953151],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_78660853ad46b3581df777a5075629c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_462581bfe4b1309674e6fa3ced0163c3 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_7ac4b19d2c67b2efe9cc11eba0aecece = $(`<div id="html_7ac4b19d2c67b2efe9cc11eba0aecece" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 SLGR (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGENA ALBORNOZ DEBORA DANIELA</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_462581bfe4b1309674e6fa3ced0163c3.setContent(html_7ac4b19d2c67b2efe9cc11eba0aecece);
+            
+        
+
+        marker_bc1b43ddab934c3a0530355ccfdb85eb.bindPopup(popup_462581bfe4b1309674e6fa3ced0163c3)
+        ;
+
+        
+    
+    
+                marker_bc1b43ddab934c3a0530355ccfdb85eb.setIcon(icon_78660853ad46b3581df777a5075629c1);
+            
+    
+            var marker_62471b6da75e156cd461d9414bae5eb1 = L.marker(
+                [-30.993342, -57.915075],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_135268b4af24b2ebd57d00b3a7aab8a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cfa6650a55431a2820335cb779f0e011 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_27d2f77e3c0715c243de5ffe945c6307 = $(`<div id="html_27d2f77e3c0715c243de5ffe945c6307" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 FEDE (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGEMA COMAN GUILLERMO MAURO AGUSTIN</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> III<br>                     <b>Cargo:</b> JEFE                 </div>                 </div></div>`)[0];
+                popup_cfa6650a55431a2820335cb779f0e011.setContent(html_27d2f77e3c0715c243de5ffe945c6307);
+            
+        
+
+        marker_62471b6da75e156cd461d9414bae5eb1.bindPopup(popup_cfa6650a55431a2820335cb779f0e011)
+        ;
+
+        
+    
+    
+                marker_62471b6da75e156cd461d9414bae5eb1.setIcon(icon_135268b4af24b2ebd57d00b3a7aab8a5);
+            
+    
+            var marker_b0c9ce4eec011d66c69abe5899513416 = L.marker(
+                [-29.717836, -57.08457],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_3a08de5d4c238fc4a8f7a63787e2c429 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df40fcd2115c1c3ba7c4b1a0dee9a3ef = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_39366875a7cc5d2700cec41406f741fb = $(`<div id="html_39366875a7cc5d2700cec41406f741fb" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 LIBR (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA GONZALEZ SEBASTIAN RODRIGO</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_df40fcd2115c1c3ba7c4b1a0dee9a3ef.setContent(html_39366875a7cc5d2700cec41406f741fb);
+            
+        
+
+        marker_b0c9ce4eec011d66c69abe5899513416.bindPopup(popup_df40fcd2115c1c3ba7c4b1a0dee9a3ef)
+        ;
+
+        
+    
+    
+                marker_b0c9ce4eec011d66c69abe5899513416.setIcon(icon_3a08de5d4c238fc4a8f7a63787e2c429);
+            
+    
+            var marker_1b7988354060d3949bdbe7560641b754 = L.marker(
+                [-29.232393, -59.578989],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_f8640c4e29b30785026d7dd9bfbe65d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ddcae09dce1f708fbac8036cf9ce7cc = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_d57923af170f04e3e69623da7036065c = $(`<div id="html_d57923af170f04e3e69623da7036065c" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 RECO (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGEMA MENDEZ DANIEL ALBERTO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_7ddcae09dce1f708fbac8036cf9ce7cc.setContent(html_d57923af170f04e3e69623da7036065c);
+            
+        
+
+        marker_1b7988354060d3949bdbe7560641b754.bindPopup(popup_7ddcae09dce1f708fbac8036cf9ce7cc)
+        ;
+
+        
+    
+    
+                marker_1b7988354060d3949bdbe7560641b754.setIcon(icon_f8640c4e29b30785026d7dd9bfbe65d0);
+            
+    
+            var marker_6d38ff10862c2fbba8c6faf65ad0beee = L.marker(
+                [-29.144129, -59.272694],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_9a213cd33c465a8e79b3d107f8d27fd4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0cea5ed0c5746280d9db9e8e6443e0bc = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_9fe2c604c51a3d1d600968d35fd694a4 = $(`<div id="html_9fe2c604c51a3d1d600968d35fd694a4" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 LYCH (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA ROMERO JONATTAN ADRIAN</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> CAPITAN                 </div>                 </div></div>`)[0];
+                popup_0cea5ed0c5746280d9db9e8e6443e0bc.setContent(html_9fe2c604c51a3d1d600968d35fd694a4);
+            
+        
+
+        marker_6d38ff10862c2fbba8c6faf65ad0beee.bindPopup(popup_0cea5ed0c5746280d9db9e8e6443e0bc)
+        ;
+
+        
+    
+    
+                marker_6d38ff10862c2fbba8c6faf65ad0beee.setIcon(icon_9a213cd33c465a8e79b3d107f8d27fd4);
+            
+    
+            var marker_27139c40ba34694003f29c7db6521dba = L.marker(
+                [-27.571199, -54.67947],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_30da1cd19a9fe15d8fd3c4157f377bef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91405f280886abfd09789371544da800 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_085c8afa94254049454b6a68c4814b33 = $(`<div id="html_085c8afa94254049454b6a68c4814b33" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 ALPO (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA WOJCIK MANUEL HERNANDO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">SPCGGENA VALLEJOS GUILLERMO</b><br>                     <b>Esp:</b> nan | <b>Nivel:</b> nan<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_91405f280886abfd09789371544da800.setContent(html_085c8afa94254049454b6a68c4814b33);
+            
+        
+
+        marker_27139c40ba34694003f29c7db6521dba.bindPopup(popup_91405f280886abfd09789371544da800)
+        ;
+
+        
+    
+    
+                marker_27139c40ba34694003f29c7db6521dba.setIcon(icon_30da1cd19a9fe15d8fd3c4157f377bef);
+            
+    
+            var marker_f2c2ddf30dda5aca02a99013c100718a = L.marker(
+                [-27.515447, -64.902824],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_e384d9c64a985d11e0e616812e7e29d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5b19e8bf4368cee87e402e3dd8aba29 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_0753d21c2a689460834bf596d7030ad6 = $(`<div id="html_0753d21c2a689460834bf596d7030ad6" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 GCRP (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGEMA MENDEZ ANDRES DAIAN</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> nan<br>                     <b>Cargo:</b> JEFE MAQ                 </div>                 </div></div>`)[0];
+                popup_c5b19e8bf4368cee87e402e3dd8aba29.setContent(html_0753d21c2a689460834bf596d7030ad6);
+            
+        
+
+        marker_f2c2ddf30dda5aca02a99013c100718a.bindPopup(popup_c5b19e8bf4368cee87e402e3dd8aba29)
+        ;
+
+        
+    
+    
+                marker_f2c2ddf30dda5aca02a99013c100718a.setIcon(icon_e384d9c64a985d11e0e616812e7e29d7);
+            
+    
+            var marker_b39766c7ddc0f8a480c1e2044fbd5b85 = L.marker(
+                [-27.461319, -58.835289],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_b0e947c40071dee306c2f96da5254062 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_883ed9f8a316100d064c3dffc0708689 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_868c0fba32646f8ae166c233f78e145c = $(`<div id="html_868c0fba32646f8ae166c233f78e145c" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 CORR (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA RAMIREZ SERGIO DANIEL</b><br>                     <b>Esp:</b> DEDU N7.4 Nº 05 "C"/12 (EQUIPO/RADIO) | <b>Nivel:</b> nan<br>                     <b>Cargo:</b> JEOP                 </div>                              <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 PZPP (Total: 5)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGGENA SILVA ALEJANDRO ANIBAL</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PPCGESMA LEFFLER CARLOS ALBERTO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE LOGISTICA - MATERIAL                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA URAN NICOLAS EMMANUEL</b><br>                     <b>Esp:</b> MAQUINAS-CASCO | <b>Nivel:</b> II - I<br>                     <b>Cargo:</b> UNIDAD DE CONTROL                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA SANCHEZ GUSTAVO EZEQUIEL</b><br>                     <b>Esp:</b> MAQUINAS-CASCO | <b>Nivel:</b> II - I<br>                     <b>Cargo:</b> UNIDAD DE CONTROL                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCCTG FERNANDEZ ABRAHAM LEANDRO MARCELO</b><br>                     <b>Esp:</b> CASCO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> UNIDAD DE CONTROL                 </div>                 </div></div>`)[0];
+                popup_883ed9f8a316100d064c3dffc0708689.setContent(html_868c0fba32646f8ae166c233f78e145c);
+            
+        
+
+        marker_b39766c7ddc0f8a480c1e2044fbd5b85.bindPopup(popup_883ed9f8a316100d064c3dffc0708689)
+        ;
+
+        
+    
+    
+                marker_b39766c7ddc0f8a480c1e2044fbd5b85.setIcon(icon_b0e947c40071dee306c2f96da5254062);
+            
+    
+            var marker_785dc5150275ca36ed5eb53959672a2a = L.marker(
+                [-26.924458, -58.509534],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_1cbd1003572d2ab53a99c5fbdf216df3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d2ab9a4b5d7a17e9a7d7b39b3aa5c51 = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_b7377e88c25e90ccd4d9e142a46a9e8e = $(`<div id="html_b7377e88c25e90ccd4d9e142a46a9e8e" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 BERM (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGEMA DI LORENZO EMMANUEL ALEJANDRO</b><br>                     <b>Esp:</b> MAQUINAS | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                 </div></div>`)[0];
+                popup_8d2ab9a4b5d7a17e9a7d7b39b3aa5c51.setContent(html_b7377e88c25e90ccd4d9e142a46a9e8e);
+            
+        
+
+        marker_785dc5150275ca36ed5eb53959672a2a.bindPopup(popup_8d2ab9a4b5d7a17e9a7d7b39b3aa5c51)
+        ;
+
+        
+    
+    
+                marker_785dc5150275ca36ed5eb53959672a2a.setIcon(icon_1cbd1003572d2ab53a99c5fbdf216df3);
+            
+    
+            var marker_88948dad10ddca5af7008fd5ccdbd45d = L.marker(
+                [-26.559869, -54.803432],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_43ee5239201b32b49680d778b7486991 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f2e484908839e5c43ba2500fd51822c = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_7a09ec0f29d898416375d780f0638ea9 = $(`<div id="html_7a09ec0f29d898416375d780f0638ea9" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 MCAR (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGEMA PEREZ LEONARDO</b><br>                     <b>Esp:</b> nan | <b>Nivel:</b> nan<br>                     <b>Cargo:</b> nan                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">OPCGGEMA ESPINOLA MAXIMILIANO EZEQUIEL</b><br>                     <b>Esp:</b> nan | <b>Nivel:</b> nan<br>                     <b>Cargo:</b> nan                 </div>                 </div></div>`)[0];
+                popup_7f2e484908839e5c43ba2500fd51822c.setContent(html_7a09ec0f29d898416375d780f0638ea9);
+            
+        
+
+        marker_88948dad10ddca5af7008fd5ccdbd45d.bindPopup(popup_7f2e484908839e5c43ba2500fd51822c)
+        ;
+
+        
+    
+    
+                marker_88948dad10ddca5af7008fd5ccdbd45d.setIcon(icon_43ee5239201b32b49680d778b7486991);
+            
+    
+            var marker_ddc46c9134af07c720bd8c7643121f3a = L.marker(
+                [-26.426905, -54.683661],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_01545c5b84d5c4a8513902ae9eb89117 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89e7de6e01ca465e0cf749f92a8f904a = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_e21439ce2050263f31f33ad5cc70beb9 = $(`<div id="html_e21439ce2050263f31f33ad5cc70beb9" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 ELDO (Total: 2)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM TOMEO LEONARDO DANIEL</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEFE                 </div>                                  <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGECM SINKOVICH, NESTOR ABEL</b><br>                     <b>Esp:</b> RADIO | <b>Nivel:</b> ESUP, KU.F Nº17/14<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_89e7de6e01ca465e0cf749f92a8f904a.setContent(html_e21439ce2050263f31f33ad5cc70beb9);
+            
+        
+
+        marker_ddc46c9134af07c720bd8c7643121f3a.bindPopup(popup_89e7de6e01ca465e0cf749f92a8f904a)
+        ;
+
+        
+    
+    
+                marker_ddc46c9134af07c720bd8c7643121f3a.setIcon(icon_01545c5b84d5c4a8513902ae9eb89117);
+            
+    
+            var marker_61ff536b70aab471dbb6ebacd7c01bef = L.marker(
+                [-26.181938, -58.16327],
+                {
+}
+            ).addTo(map_ecdf90e2eaad3c89de2abd75bfa3f2ea);
+        
+    
+            var icon_da54aacd3ad0352cb6b68393f0219267 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33e074a54b3ec91c78e4e49070d7399a = L.popup({
+  "maxWidth": 310,
+});
+
+        
+            
+                var html_7bf4327072bfba36dc38b8e6f3dd759b = $(`<div id="html_7bf4327072bfba36dc38b8e6f3dd759b" style="width: 100.0%; height: 100.0%;">         <div style="width: 280px; max-height: 250px; overflow-y: auto; overflow-x: hidden;                      font-family: 'Segoe UI', Arial, sans-serif; padding-right: 5px;">                      <div style="background-color: #003366; color: white; padding: 6px; margin-top: 10px;                          font-size: 11px; font-weight: bold; border-radius: 4px 4px 0 0;                          text-align: center; text-transform: uppercase;">                 FORM (Total: 1)             </div>                              <div style="border: 1px solid #ccc; border-top: none; padding: 8px;                              background-color: #f8f9fa; font-size: 11px; margin-bottom: 2px;">                     <b style="color: #003366;">PRCGGENA ACOSTA DIEGO RAMON</b><br>                     <b>Esp:</b> EQUIPO | <b>Nivel:</b> II<br>                     <b>Cargo:</b> JEOP                 </div>                 </div></div>`)[0];
+                popup_33e074a54b3ec91c78e4e49070d7399a.setContent(html_7bf4327072bfba36dc38b8e6f3dd759b);
+            
+        
+
+        marker_61ff536b70aab471dbb6ebacd7c01bef.bindPopup(popup_33e074a54b3ec91c78e4e49070d7399a)
+        ;
+
+        
+    
+    
+                marker_61ff536b70aab471dbb6ebacd7c01bef.setIcon(icon_da54aacd3ad0352cb6b68393f0219267);
+            
+</script>
+</html>
