@@ -49,8 +49,8 @@ if os.path.exists("fondo.png"):
 # --- DISEÑO INSTITUCIONAL ---
 
 # 1. Escudo Centrado
-col1, col2, col3 = st.columns([1, 1, 1])
-with col2:
+col1, col2, col3, col4, col5 = st.columns([1, 1, 1, 1, 1])
+with col3:
     if os.path.exists("escudo_dtnav.png"):
         st.image("escudo_dtnav.png", width=350)
     else:
