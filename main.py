@@ -8,7 +8,7 @@ st.set_page_config(layout="wide", page_title="Mapa Inspectores PNA")
 # --- DISEÑO INSTITUCIONAL ---
 
 # 1. Escudo Centrado usando columnas (Método más estable)
-col1, col2, col3 = st.columns([1, 1, 1]) # Tres columnas iguales
+col1, col2, col3 = st.columns([1, 2, 1]) # Tres columnas iguales
 
 with col2:
     if os.path.exists("escudo_dtnav.png"):
