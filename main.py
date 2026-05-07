@@ -19,7 +19,7 @@ with col2:
 
 # 2. Título Centrado
 st.markdown(
-    "<h1 style='text-align: center; margin-top: -20px;'>Departamento Técnico de la Navegación - Inspectores</h1>", 
+    "<h1 style='text-align: center; margin-top: -20px;'>Departamento Técnico de la Navegación - Distribucion de Inspectores</h1>", 
     unsafe_allow_html=True
 )
 
