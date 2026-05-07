@@ -13,7 +13,7 @@ col1, col2, col3 = st.columns([1, 1, 1]) # Tres columnas iguales
 with col2:
     if os.path.exists("escudo_dtnav.png"):
         # Ajustamos el ancho a 250 para que se vea igual a tu captura previa
-        st.image("escudo_dtnav.png", width=250)
+        st.image("escudo_dtnav.png", width=300)
     else:
         st.error("No se encontró el archivo 'escudo_dtnav.png' en el repositorio.")
 
