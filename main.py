@@ -52,7 +52,7 @@ if os.path.exists("fondo.png"):
 col1, col2, col3, col4, col5 = st.columns([1, 1, 1, 1, 1])
 with col3:
     if os.path.exists("escudo_dtnav.png"):
-        st.image("escudo_dtnav.png", width=450)
+        st.image("escudo_dtnav.png", width=550)
     else:
         st.error("No se encontró 'escudo_dtnav.png'")
 
